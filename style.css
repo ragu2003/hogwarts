@@ -63,7 +63,7 @@
 
 
 .content{
-    
+
 }
 .dumbledore_container{
     background-color: black;
@@ -81,7 +81,7 @@
 .dumbledore:nth-child(2){
     display: grid;
     grid-template-rows: 1fr 1fr 2.5fr 2.5fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 3.5fr 3.5fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 3.8fr 3.8fr 1fr 1fr;
     max-height: 450px;
     flex: 2;
 }
@@ -102,6 +102,55 @@
     grid-row: 2 / span 2;
 }
 .dumbledore:nth-child(2)::after{
+    content: "";
+    border-bottom: 5px solid #7e2699;
+    border-right: 5px solid #7e2699;
+    grid-column: 4 / span 2;
+    grid-row: 4 / span 2;
+}
+
+
+
+
+
+
+.mcgonagall-container{
+    background-color: black;
+    display: flex;
+    padding: 60px 30px 30px 30px;
+}
+.mcgonagall:nth-child(1){
+    flex: 1;
+}
+.mcgonagall:nth-child(1) img{
+    display: block;
+    height: 400px;
+    margin: auto;
+}
+.mcgonagall:nth-child(2){
+    display: grid;
+    grid-template-rows: 1fr 1fr 2.5fr 2.5fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 3.8fr 3.8fr 1fr 1fr;
+    max-height: 450px;
+    flex: 2;
+}
+.mcgonagall:nth-child(2) p{
+    color: white;
+    font-family: 'Montserrat',sans-serif;
+}
+.mcgonagall:nth-child(2) div{
+    align-self: center;
+    grid-row: 3 / 5;
+    grid-column: 3 / 5;
+}
+.mcgonagall:nth-child(2)::before{
+    content: "";
+    border-top: 5px solid #7e2699;
+    border-left: 5px solid #7e2699;
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 2;
+}
+.mcgonagall:nth-child(2)::after{
     content: "";
     border-bottom: 5px solid #7e2699;
     border-right: 5px solid #7e2699;

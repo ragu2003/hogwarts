@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
     </style>
@@ -13,18 +14,95 @@
 
 
 <body style="margin: 0";>
+    <!--
     <div class="header">
         <img style="max-width:50px; max-height:50px" src="logo.png" alt="logo">
         <ul class="nav">
-            <li>Home</li>
-            <li>Apply</li>
-            <li>Hogwarts-Express</li>
-            <li>Creator</li>
-            <li>Rules</li>
+            <li class ="nav-search">Home</li>
+            <li class ="nav-search">Apply</li>
+            <li class ="nav-search">Hogwarts-Express</li>
+            <li class ="nav-search">Creator</li>
+            <li class ="nav-search">Rules</li>
         </ul>
+    </div>
+    -->
+
+
+    <div class="sidebar active">
+        <div class="logo-content">
+            <div class="logo">
+                <img style="max-width:50px; max-height:50px" src="logo.png" alt="logo">
+                <div class="logo-name">Hogwarts</div>
+                <i class='bx bx-menu' id='btn'></i>
+            </div>
+
+        </div>
+        <ul class="side-nav">
+        <!-- <li>
+            <a href="#">
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Search..">
+            </a>
+        </li> -->
+        <li>
+            <a href="#">
+                <i class='bx bx-pyramid bx-flashing' ></i>
+                <span>Secrets</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class='bx bxs-magic-wand'></i>
+                <span>Wands</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class='bx bx-bowling-ball bx-spin' ></i>
+                <span>Quidditch</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class='bx bx-male'></i>
+                <span>Hall Of Fame</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class='bx bx-book-content'></i>
+                <span>Rules</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class='bx bxs-school'></i>
+                <span>About</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class='bx bx-train bx-tada' ></i>
+                <span>Hogwarts-Express</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class='bx bx-mail-send'></i>
+                <span>Apply</span>
+            </a>
+        </li>
+
+
+
+    </ul>
+
     </div>
 
 
+
+
+    <div class="fixed">
     <div class="intro">
         <img class="hogwarts_school" src="hogwarts.jpg" alt="hogwarts">
         <div class="title">
@@ -36,13 +114,16 @@
             <img style="max-width:750px" src="hogwarts_logo.png" alt="hogwarts_logo">
         </div>
     </div>
+    </div>
+
+
 
 
 
     <div class="content">
         <div class="dumbledore_container">
             <div class="dumbledore">
-                <img src="dumbledore_new.png" alt="dumbledore">
+                <img src="dumbledore.png" alt="dumbledore">
             </div>
             <div class="dumbledore">
                 <div>
@@ -56,6 +137,7 @@
                 </div>
             </div>
         </div>
+
 
 
 
@@ -77,5 +159,6 @@
         </div>
         
     </div>
+    <script src="main.js"></script>
 </body>
 </html>

@@ -45,9 +45,12 @@
     height: 100%;
     width: 65px;
     background-color: #11101d;
-    z-index: 1;
+    z-index: 9;
     overflow: hidden;
     transition: all 0.5s ease-out;
+    
+    display: flex;
+    flex-flow: column;
 }
 .active{
     z-index: 99;
@@ -56,11 +59,9 @@
 }
 .logo {
     display: flex;
+    justify-content: space-around;
     align-items: center;
-}
-.logo-content {
     color: #fff;
-    /* pointer-events: none; */
     opacity: 0;
 }
 .logo-name{
@@ -78,6 +79,8 @@
     font-size: 200%;
     left: 200px;
     top: -75px; */
+    margin-top: 4px;
+    font-size: 24px;
 }
 .sidebar ul li input{
     position: absolute;
@@ -106,6 +109,7 @@
     position: relative;
     top: -60px;
     overflow: hidden;
+    min-width: 250px;
 }
 .sidebar li a span{
     position: absolute;
@@ -129,7 +133,7 @@
     list-style: none;
     font-family: Poppins, sans-serif;
     padding-left: 0px;
-    
+    margin-top: 5em;
 }
 .side-nav li:hover{
     background-color: #1d1b31;

@@ -1,0 +1,19 @@
+.content{
+    height: 100vh;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 6fr 1fr;
+}
+.hogwarts{
+    grid-row: 1 / 4;
+    grid-column: 1 / 4;
+}
+.hogwarts img{
+    height: 100%;
+    width: 100%;
+}
+.form{
+    background-color: rgba(0,0,0,0.6);
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}

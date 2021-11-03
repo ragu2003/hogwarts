@@ -8,7 +8,7 @@
 .body{
     overflow: hidden;
 }
-.header{
+/* .header{
     background-color: #00356b;
     font-family: sans-serif;
     display: flex;
@@ -32,115 +32,7 @@
 .nav li:hover{
     color: black;
     cursor: pointer;
-}
-
-
-
-
-.sidebar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding-top: 10px;
-    height: 100%;
-    width: 65px;
-    background-color: #11101d;
-    z-index: 9;
-    overflow: hidden;
-    transition: all 0.5s ease-out;
-    
-    display: flex;
-    flex-flow: column;
-}
-.active{
-    z-index: 99;
-    width: 250px;
-    transition: all 0.4s ease-out;
-}
-.logo {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: #fff;
-    opacity: 0;
-}
-.logo-name{
-    left: 25%;
-    top: -47px;
-    font-size: 175%;
-    pointer-events: none;
-}
-.active .logo-content{
-    opacity: 1;
-
-}
-.bx-menu{
-    /* position: relative;
-    font-size: 200%;
-    left: 200px;
-    top: -75px; */
-    margin-top: 4px;
-    font-size: 24px;
-}
-.sidebar ul li input{
-    position: absolute;
-    height: 85%;
-    width: 65%;
-    top:0;
-    left:10px;
-    border-radius: 12px;
-    outline: none;
-    border: none;
-    background: #1d1b31;
-    font-size: 100%;
-    padding-left: 60px;
-}
-.bx-search{
-    position: relative;
-    top: -5px;
-    z-index: 99;
-}
-.sidebar li a i{
-    line-height: 57px;
-    font-size: 200%;
-    padding:0px 20px 0px 15px;
-}
-.sidebar li{
-    position: relative;
-    top: -60px;
-    overflow: hidden;
-    min-width: 250px;
-}
-.sidebar li a span{
-    position: absolute;
-    align-self: center;
-    top:17px;
-    opacity: 0;
-    overflow: hidden;
-    transition: all 0.1s ease-out;
-}
-.active .side-nav li a span{
-    opacity: 1;
-    transition: all 1s ease-in;
-}
-.sidebar li a{
-    text-decoration: none;
-    color: #fff;
-    
-}
-.side-nav{
-    color: white;
-    list-style: none;
-    font-family: Poppins, sans-serif;
-    padding-left: 0px;
-    margin-top: 5em;
-}
-.side-nav li:hover{
-    background-color: #1d1b31;
-}
-.bx-menu:hover{
-    background-color: white;
-}
+} */
 
 
 
@@ -176,7 +68,7 @@
   color: #537895;
   line-height: 1;
 }
-.logo{
+.symbol{
     grid-row: 2 / 3;
     grid-column: 1 / 2;
     opacity: 1;
@@ -242,7 +134,7 @@
 }
 .mcgonagall:nth-child(1) img{
     display: block;
-    height: 400px;
+    height: 350px;
     margin: auto;
 }
 .mcgonagall:nth-child(2){

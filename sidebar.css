@@ -1,0 +1,125 @@
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 10px;
+    height: 100%;
+    width: 65px;
+    background-color: #11101d;
+    z-index: 9;
+    overflow: hidden;
+    transition: all 0.5s ease-out;
+    
+    display: flex;
+    flex-flow: column;
+}
+.active{
+    z-index: 99;
+    width: 250px;
+    transition: all 0.4s ease-out;
+}
+.logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+.logo img {
+    opacity: 0;
+    transition: all 0.4s ease-out
+}
+.active .logo img{
+    opacity: 1;
+}
+.logo-name{
+    left: 25%;
+    top: -47px;
+    font-size: 175%;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.4s ease-out;
+}
+.active .logo-name{
+    opacity: 1;
+    transition: all 0.4s ease-out;
+}
+.bx-menu{
+    /* position: relative;
+    font-size: 200%;
+    left: 200px;
+    top: -75px; */
+    /* margin-top: 4px;
+    font-size: 24px; */
+    position: absolute;
+    justify-self: center;
+    font-size: 30px;
+    transition: all 0.5s ease-in;
+
+}
+.active .bx-menu{
+    position: inherit;
+    margin-top: 4px;
+    font-size: 30px;
+    transition: all 1s ease-out;
+
+}
+.sidebar ul li input{
+    position: absolute;
+    height: 85%;
+    width: 65%;
+    top:0;
+    left:10px;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background: #1d1b31;
+    font-size: 100%;
+    padding-left: 60px;
+}
+.bx-search{
+    position: relative;
+    top: -5px;
+    z-index: 99;
+}
+.sidebar li a i{
+    line-height: 57px;
+    font-size: 200%;
+    padding:0px 20px 0px 15px;
+}
+.sidebar li{
+    position: relative;
+    top: -60px;
+    overflow: hidden;
+    min-width: 250px;
+}
+.sidebar li a span{
+    position: absolute;
+    align-self: center;
+    top:17px;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-out;
+}
+.active .side-nav li a span{
+    opacity: 1;
+    transition: all 0.5s ease-in;
+}
+.sidebar li a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+.side-nav{
+    color: white;
+    list-style: none;
+    font-family: Poppins, sans-serif;
+    padding-left: 0px;
+    margin-top: 5em;
+}
+.side-nav li:hover{
+    background-color: #1d1b31;
+}
+.bx-menu:hover{
+    background-color: #1d1b31;
+}
+

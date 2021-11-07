@@ -1,41 +1,8 @@
+/* importing a new downloaded font styles */
 @font-face {
     font-family: OldEnglish;
     src: url(OldEnglishFive.ttf);  
 }
-
-
-
-.body{
-    overflow: hidden;
-}
-/* .header{
-    background-color: #00356b;
-    font-family: sans-serif;
-    display: flex;
-    padding:0 45px;
-    justify-content: space-between;
-    align-content: center;
-    position: fixed;
-    width: -webkit-fill-available;
-    z-index: 12;
-}
-.nav{
-    color: #fff;
-    display: flex;
-    text-decoration: none;
-    list-style: none;
-}
-.nav li{
-    padding-left: 20px;
-    transition-property: color;
-}
-.nav li:hover{
-    color: black;
-    cursor: pointer;
-} */
-
-
-
 
 
 
@@ -78,6 +45,8 @@
 
 
 
+/* a flexbox with flex direction row which has dumbledor pic on left and his info on the right and
+his info div is defined as grid to draw borders only on a specific grid */
 .dumbledore_container{
     background-color: black;
     display: flex;
@@ -123,7 +92,7 @@
 }
 
 
-
+/* the same style as dumbledore */
 .mcgonagall-container{
     background-color: black;
     display: flex;

@@ -1,4 +1,4 @@
-let btn = document.querySelector(".bx-menu");
+let btn = document.getElementById("btn");
 let sidebar = document.querySelector(".sidebar");
 let searchBtn = document.querySelector(".bx-search");
 

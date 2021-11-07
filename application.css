@@ -13,7 +13,53 @@
     width: 100%;
 }
 .form{
+    font-family: 'Crimson Text', serif;
     background-color: rgba(0,0,0,0.6);
     grid-row: 2 / 3;
     grid-column: 2 / 3;
+}
+.form ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.form li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 18px;
+}
+.form li,h2{
+    color: #fff;
+}
+.form h2{
+    text-align: center;
+}
+.form input{
+    margin: 7px 7px 7px 0;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    background-color: rgb(37, 28, 28);
+    color: #fff;
+    font-size: 15px;
+}
+.form button{
+    align-self: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-family: 'Crimson Text', serif;
+    margin-top: 30px;
+    background-color: rgb(54, 33, 33);
+    color: #fff;
+    transition-duration: 500ms;
+}
+.form button:hover{
+    background-color: rgb(66, 40, 40);
+    transition-duration: 500ms;
 }

@@ -10,6 +10,7 @@
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
     </style>
 </head>
 <body style="margin: 0";>
@@ -92,8 +93,43 @@
         <div class="hogwarts">
             <img src="hogwarts-2.jpeg" alt="hogwarts">
         </div>
-        <div class="form"></div>
+        <div class="form">
+            <h2>Apply to hogwarts</h2>
+            <ul>
+                <li>
+                    <p>Your name:</p>
+                    <input type="text" name="" id="">
+                </li>
+                <li>
+                    <p>Age:</p>
+                    <input type="text" name="" id="">
+                </li>
+                <li>
+                    <p>Surname/Father's name:</p>
+                    <input type="text" name="" id="">
+                </li>
+                <li>
+                    <p>Bloodline:</p>
+                    <input type="text" name="" id="blood" list="bloodline">
+                    <datalist id="bloodline">
+                        <option value="Pure Blood"/>
+                        <option value="Half Blood"/>
+                        <option value="Muggle Born"/>
+                    </datalist>
+                </li>
+                <li>
+                    <p>Prefered House:</p>
+                    <input type="text" name="" id="">
+                </li>
+                <button>Apply</button>
+            </ul>
+            
+            
+        </div>
     </div>
+
+
+
     <script src="main.js"></script>
 </body>
 </html>

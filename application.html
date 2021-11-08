@@ -101,14 +101,14 @@
             <ul>
                 <li>
                     <p>Your name:</p>
-                    <input type="text" name="" id="">
+                    <input type="text" name="" id="dummyname">
                 </li>
                 <li>
                     <p>Age:</p>
                     <input type="text" name="" id="">
                 </li>
                 <li>
-                    <p>Surname/Father's name:</p>
+                    <p>Surname/Father's Name: </p>
                     <input type="text" name="" id="">
                 </li>
 
@@ -116,9 +116,10 @@
 
                 <li class="bloodline" >
                     <p>Bloodline:</p>
-                    <div class="BloodLineDropDown" style="position: relative;">
+                    <div class="BloodLineDropDown">
                         <div class="SelectBloodLine">
-                            Select blood line
+                            <span class="SelectBloodLine-text">Select blood line</span>
+                            <i class='bx bx-chevron-down' id="blood-arrow" onclick="showblood();"></i>
                         </div>
                         <div class="blood-options">
                             <ul class="blood-options-list">
@@ -129,18 +130,31 @@
                         </div>
                         
                     </div>
-                    <i class='bx bx-chevron-down' id="blood-arrow" onclick="showblood();"></i>
                 </li>
 
 
 
-<!-- 
-                <li>
-                    <p>Prefered House:</p>
-                    <div class="house">Select house</div>
-                    <i class='bx bx-chevron-down' id="houses"></i>
+
+                <li class="houses" >
+                    <p>House:</p>
+                    <div class="HouseDropDown">
+                        <div class="SelectHouse">
+                            <span class="SelectHouse-text">Preffered House</span>
+                            <i class='bx bx-chevron-down' id="house-arrow" onclick="showhouse();"></i>
+                        </div>
+                        <div class="house-options">
+                            <ul class="house-options-list">
+                                <li onclick="showhouse1();">Gryffindor</li>
+                                <li onclick="showhouse2();">Hufflepuff</li>
+                                <li onclick="showhouse3();">Ravenclaw</li>
+                                <li onclick="showhouse4();">Slytherin</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
                 </li>
-                <button>Apply</button> -->
+
+                <button>Apply</button>
             </ul>
             
             

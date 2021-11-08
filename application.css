@@ -69,7 +69,6 @@
 
 
 .BloodLineDropDown{
-    position: relative;
     margin: 7px 7px 7px 0;
     border-radius: 12px;
     border: none;
@@ -77,25 +76,27 @@
     background-color: rgb(37, 28, 28);
     color: rgb(90, 68, 68);
     font-size: 15px;
-    width: 48%;
     font-family: Poppins, sans-serif;
     text-align: left;
     padding-top: 15px;
-    left: 83px;
-    max-height: 35px;
+    max-height: 30px;
+    height: 44.667px;
+    width: 182.667px;
 }
 .SelectBloodLine{
+    display: flex;
+    justify-content: space-between;
     padding-left: 10px;
 }
 #blood-arrow{
     color:#fff;
     z-index: 99;
-    margin-right: 20px;
-    margin-top: 18px;
     font-size: 25px;
     transition: 0.25s;
     height: fit-content;
     border-radius: 12px;
+    position: relative;
+    bottom: 5px;
 }
 #blood-arrow:hover{
     background-color: rgb(90, 68, 68);
@@ -106,12 +107,12 @@
     z-index: 99;
 }
 .activeblood {
-    margin-top: 25px;
+    margin-top: 15px;
     background-color: rgb(37, 28, 28);
     border-radius: 12px;
     padding-left: 0;
     opacity: 1;
-    z-index: 99;
+    z-index: 100;
 }
 .activeblood li{
     padding-top: 10px;
@@ -127,6 +128,7 @@
     border-right-width: 0;
     border-style: solid;
 }
+
 .activeblood li:hover{
     background-color: rgb(66, 40, 40);
     cursor: pointer;
@@ -134,8 +136,12 @@
 }
 
 
-.house{
-    position: relative;
+
+
+
+
+
+.HouseDropDown{
     margin: 7px 7px 7px 0;
     border-radius: 12px;
     border: none;
@@ -143,18 +149,66 @@
     background-color: rgb(37, 28, 28);
     color: rgb(90, 68, 68);
     font-size: 15px;
-    width: 45%;
     font-family: Poppins, sans-serif;
     text-align: left;
     padding-top: 15px;
-    padding-left: 10px;
-    left: 62px;
-    z-index: 0;
+    max-height: 30px;
+    height: 44.667px;
+    width: 182.667px;
 }
-#houses{
+.SelectHouse{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+#house-arrow{
     color:#fff;
-    z-index: 20;
-    margin-right: 20px;
-    margin-top: 18px;
+    z-index: 99;
     font-size: 25px;
+    transition: 0.25s;
+    height: fit-content;
+    border-radius: 12px;
+    position: relative;
+    bottom: 5px;
+}
+#house-arrow:hover{
+    background-color: rgb(90, 68, 68);
+    transition: 0.25s;
+}
+.house-options-list{
+    opacity: 0;
+    z-index: 99;
+}
+.activehouse {
+    margin-top: 15px;
+    background-color: rgb(37, 28, 28);
+    border-radius: 12px;
+    padding-left: 0;
+    opacity: 1;
+    z-index: 99;
+}
+.activehouse li{
+    padding-top: 10px;
+    color: rgb(90, 68, 68);
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-radius: 12px;
+    z-index: 99;
+}
+.activehouse li:nth-child(2){
+    border: 1px;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-style: solid;
+}
+.activehouse li:nth-child(3){
+    border: 1px;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-style: solid;
+}
+.activehouse li:hover{
+    background-color: rgb(66, 40, 40);
+    cursor: pointer;
+    border-radius: 12px;
 }

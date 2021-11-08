@@ -94,6 +94,9 @@
             <img src="hogwarts-2.jpeg" alt="hogwarts">
         </div>
         <div class="form">
+            <!-- <div class="blood">
+
+            </div> -->
             <h2>Apply to hogwarts</h2>
             <ul>
                 <li>
@@ -108,20 +111,36 @@
                     <p>Surname/Father's name:</p>
                     <input type="text" name="" id="">
                 </li>
-                <li>
+
+
+
+                <li class="bloodline" >
                     <p>Bloodline:</p>
-                    <input type="text" name="" id="blood" list="bloodline">
-                    <datalist id="bloodline">
-                        <option value="Pure Blood"/>
-                        <option value="Half Blood"/>
-                        <option value="Muggle Born"/>
-                    </datalist>
+                    <div class="BloodLineDropDown" style="position: relative;">
+                        <div class="SelectBloodLine">
+                            Select blood line
+                        </div>
+                        <div class="blood-options">
+                            <ul class="blood-options-list">
+                                <li onclick="showblood1();">PureBlood</li>
+                                <li onclick="showblood2();">HalfBlood</li>
+                                <li onclick="showblood3();">MuggleBorn</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <i class='bx bx-chevron-down' id="blood-arrow" onclick="showblood();"></i>
                 </li>
+
+
+
+<!-- 
                 <li>
                     <p>Prefered House:</p>
-                    <input type="text" name="" id="">
+                    <div class="house">Select house</div>
+                    <i class='bx bx-chevron-down' id="houses"></i>
                 </li>
-                <button>Apply</button>
+                <button>Apply</button> -->
             </ul>
             
             

@@ -63,3 +63,98 @@
     background-color: rgb(66, 40, 40);
     transition-duration: 500ms;
 }
+
+
+
+
+
+.BloodLineDropDown{
+    position: relative;
+    margin: 7px 7px 7px 0;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    background-color: rgb(37, 28, 28);
+    color: rgb(90, 68, 68);
+    font-size: 15px;
+    width: 48%;
+    font-family: Poppins, sans-serif;
+    text-align: left;
+    padding-top: 15px;
+    left: 83px;
+    max-height: 35px;
+}
+.SelectBloodLine{
+    padding-left: 10px;
+}
+#blood-arrow{
+    color:#fff;
+    z-index: 99;
+    margin-right: 20px;
+    margin-top: 18px;
+    font-size: 25px;
+    transition: 0.25s;
+    height: fit-content;
+    border-radius: 12px;
+}
+#blood-arrow:hover{
+    background-color: rgb(90, 68, 68);
+    transition: 0.25s;
+}
+.blood-options-list{
+    opacity: 0;
+    z-index: 99;
+}
+.activeblood {
+    margin-top: 25px;
+    background-color: rgb(37, 28, 28);
+    border-radius: 12px;
+    padding-left: 0;
+    opacity: 1;
+    z-index: 99;
+}
+.activeblood li{
+    padding-top: 10px;
+    color: rgb(90, 68, 68);
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-radius: 12px;
+    z-index: 99;
+}
+.activeblood li:nth-child(2){
+    border: 1px;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-style: solid;
+}
+.activeblood li:hover{
+    background-color: rgb(66, 40, 40);
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+
+.house{
+    position: relative;
+    margin: 7px 7px 7px 0;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    background-color: rgb(37, 28, 28);
+    color: rgb(90, 68, 68);
+    font-size: 15px;
+    width: 45%;
+    font-family: Poppins, sans-serif;
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 10px;
+    left: 62px;
+    z-index: 0;
+}
+#houses{
+    color:#fff;
+    z-index: 20;
+    margin-right: 20px;
+    margin-top: 18px;
+    font-size: 25px;
+}

@@ -14,10 +14,12 @@ searchBtn.onclick = function(){
 
 
 let bloodoptions = document.querySelector(".blood-options-list")
-function showblood(){
-    bloodoptions.classList.toggle("activeblood");
-}
 
+let houseoptions = document.querySelector(".house-options-list")
+function showblood(){
+        houseoptions.classList.remove("activehouse");
+        bloodoptions.classList.toggle("activeblood");
+}
 function showblood1(){
     bloodoptions.classList.toggle("activeblood");
     document.querySelector(".SelectBloodLine-text").innerHTML= "PureBlood";
@@ -32,9 +34,6 @@ function showblood3(){
 }
 
 
-
-
-let houseoptions = document.querySelector(".house-options-list")
 function showhouse(){
     houseoptions.classList.toggle("activehouse");
 }
@@ -55,3 +54,7 @@ function showhouse4(){
     houseoptions.classList.toggle("activehouse");
     document.querySelector(".SelectHouse-text").innerHTML="Slytherin";
 }
+
+
+
+

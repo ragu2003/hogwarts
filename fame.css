@@ -1,0 +1,95 @@
+@font-face {
+    font-family: OldEnglish;
+    src: url(OldEnglishFive.ttf);  
+}
+.halloffame{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    height: 100vh;
+    background: url("fame.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.halloffame h1{
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    font-family: "OldEnglish","serif";
+    font-size: 600%;
+    text-align: center;
+    background: -webkit-linear-gradient(top left,#bf953f, #fcf6ba);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 2s;
+}
+.halloffame h1:nth-child(1){
+    padding-top: 150px;
+}
+
+
+
+
+.people{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap:wrap;
+    background: black;
+}
+
+.card{
+    position: relative;
+    margin: 50px 40px 40px 40px;
+    min-width: 200px;
+    max-width: 250px;
+    color: white;
+}
+.innermerlincard{
+    margin: 15px 15px 15px 15px;
+    border-width: 2px;
+    border-radius: 12px;
+    border-style: solid;
+    color: #c0c0c0;
+    font-family: "Nunito", "sans-serif" ;
+}
+.innermerlincard img{
+    width: 90%;
+    justify-content: center;
+    padding-left: 5%;
+}
+.innermerlincard p{
+    padding: 5px 15px 15px 15px;
+}
+#merlincard{
+    background-image: url("slytherin-card.png");
+    border-radius: 12px;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.people{
+    margin-left: 65px;
+    transition: all 0.5s ease-out;
+}
+.activepeople.people{
+    margin-left: 250px;
+    transition: all 0.5s ease-out;
+}

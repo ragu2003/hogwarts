@@ -123,3 +123,6 @@
     background-color: #1d1b31;
 }
 
+.people.active{
+    margin-left: 250px;
+}

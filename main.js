@@ -1,13 +1,15 @@
 let btn = document.getElementById("btn");
 let sidebar = document.querySelector(".sidebar");
 let searchBtn = document.querySelector(".bx-search");
-
+let people = document.querySelector(".people");
 btn.onclick = function(){
     sidebar.classList.toggle("active");
+    people.classList.toggle("activepeople");
 }
 
 searchBtn.onclick = function(){
     sidebar.classList.toggle("active");
+    people.classList.toggle("activepeople");
 }
 
 
